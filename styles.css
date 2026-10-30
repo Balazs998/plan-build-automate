@@ -1,0 +1,34 @@
+:root{--bg:#07131f;--bg2:#0b1b2b;--card:#0f2234;--line:#1d3448;--text:#e8f0f5;--muted:#9fb3c4;--teal:#19b8a6;--teal2:#2dd4bf}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:var(--teal2)}a:focus-visible,.btn:focus-visible{outline:3px solid var(--teal2);outline-offset:3px}
+.skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem;background:#fff;color:#000;padding:.5rem;z-index:9}
+.wrap{max-width:1160px;margin:0 auto;padding:0 1.25rem}
+.site-header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(7,19,31,.95);z-index:5}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:.8rem;padding-bottom:.8rem}
+.brand{color:var(--text);text-decoration:none;font-weight:700;font-size:1.15rem;white-space:nowrap}.logo{color:var(--teal2)}
+nav ul{display:flex;gap:1.5rem;list-style:none;margin:0;padding:0}nav a{color:var(--text);text-decoration:none}nav a:hover{color:var(--teal2)}
+.btn{display:inline-block;padding:.7rem 1.3rem;border-radius:8px;font-weight:600;text-decoration:none}
+.btn-primary{background:var(--teal);color:#04121c}.btn-primary:hover{background:var(--teal2)}
+.btn-outline{border:1.5px solid var(--teal);color:var(--teal2)}
+.hero{padding:4rem 0 2.5rem}.hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:center}
+h1{font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.1;margin:0 0 1rem}.accent{color:var(--teal2)}
+.lead{color:var(--muted);font-size:1.15rem;margin:0 0 1.5rem}.small{color:var(--muted);font-size:.9rem}
+.panel{background:linear-gradient(160deg,#10263a,#0a1826);border:1px solid var(--line);border-radius:14px;padding:1.5rem;min-height:300px}
+.bars{display:flex;align-items:flex-end;gap:10px;height:160px}.bars span{flex:1;height:var(--h);background:linear-gradient(#2dd4bf,#1e5f8a);border-radius:3px}
+.panel-row{display:flex;gap:1rem;margin-top:1.2rem;align-items:center}.line{flex:1;height:80px;border:1px solid var(--line);border-radius:8px;background:linear-gradient(170deg,transparent 48%,var(--teal) 50%,transparent 52%)}
+.donut{width:80px;height:80px;border-radius:50%;background:conic-gradient(var(--teal2) 0 60%,#1e5f8a 60% 85%,#33475b 85%);mask:radial-gradient(circle,transparent 45%,#000 46%);-webkit-mask:radial-gradient(circle,transparent 45%,#000 46%)}
+.tools{list-style:none;padding:0;margin:3rem 0 0;display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.tools li{text-align:center;padding:1.4rem .5rem;font-weight:600;font-size:1.1rem;background:var(--bg2);border-right:1px solid var(--line)}.tools li:last-child{border-right:0}
+.section{padding:4rem 0;border-top:1px solid var(--line)}.alt{background:var(--bg2)}
+.eyebrow{color:var(--teal2);text-transform:uppercase;letter-spacing:.1em;font-size:.8rem;font-weight:700;margin:0}
+h2{font-size:clamp(1.6rem,3vw,2.2rem);margin:.3rem 0 1.5rem}h3{margin:.2rem 0 .5rem}
+.cards{display:grid;gap:1.25rem}.three{grid-template-columns:repeat(3,1fr)}.two{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.5rem}.card p{color:var(--muted);margin:0}
+.num{color:var(--teal2);font-weight:700}.tag{display:inline-block;background:#3b2f0b;color:#facc15;border:1px solid #a16207;border-radius:999px;padding:.1rem .7rem;font-size:.75rem;font-weight:700;text-transform:uppercase}
+.note{color:var(--muted);margin-top:-1rem}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:3rem}.two-col p{color:var(--muted)}
+.checks{list-style:none;padding:0}.checks li::before{content:"✓ ";color:var(--teal2);font-weight:700}
+.site-footer{border-top:1px solid var(--line);padding:1.5rem 0;color:var(--muted);font-size:.9rem;text-align:center}
+@media (max-width:860px){nav{display:none}.hero-grid,.two-col,.three,.two{grid-template-columns:1fr}.panel{min-height:0}.tools{grid-template-columns:repeat(2,1fr)}.tools li{border-bottom:1px solid var(--line)}.tools li:last-child{grid-column:span 2}.hero{padding-top:2.5rem}}
+@media (max-width:420px){.brand{font-size:1rem}.btn-outline{padding:.5rem .8rem;font-size:.9rem}}
