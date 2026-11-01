@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Logistics reporting case study – Plan Build Automate</title>
-<meta name="description" content="Typical scenario: Monthly pack in 2 days, OTIF visible on day 2 (estimated impact).">
+<meta name="description" content="Typical scenario. Aim: monthly pack in 2 days instead of 6, OTIF visible on day 2 (estimated impact).">
 <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="../../styles.css?v=20261101c">
+<link rel="stylesheet" href="../../styles.css?v=20261101d">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -23,7 +23,7 @@
   <div class="wrap">
     <p class="eyebrow">Typical scenario</p>
     <h1 class="cs-h1">Logistics reporting</h1>
-    <p class="cs-headline">Monthly pack in 2 days, OTIF visible on day 2 <span class="cs-est">Estimated impact</span></p>
+    <p class="cs-headline">Aim: monthly pack in 2 days instead of 6, OTIF visible on day 2 <span class="cs-est">Estimated impact</span></p>
     <p class="cs-client">Typical monthly logistics reporting at a mid-size industrial components manufacturer: about EUR 250m revenue, 4 warehouses, 3 carriers.</p>
     <ul class="cs-tools" aria-label="Tools used"><li>Jedox</li><li>Snowflake</li><li>Power BI</li><li>Qlik Sense</li><li>Excel VBA</li></ul>
       </div>
@@ -45,15 +45,16 @@
 <rect class="oc-b" x="40" y="25.0" width="50" height="110.0" rx="3"/><rect class="oc-a" x="110" y="113.0" width="50" height="22.0" rx="3"/>
 <text class="cs-v cs-vb" x="65" y="19.0">15</text><text class="cs-v cs-va" x="135" y="107.0">3</text>
 <text class="cs-x" x="65" y="152">Before</text><text class="cs-x" x="135" y="152">After</text></svg></figure></div>
+    <p class="cs-disclaimer">Illustrates a typical goal, not a promised result.</p>
   </div>
 </section>
 <section class="section">
   <div class="wrap cs-grid">
     <div class="card"><h2 class="cs-h2">Challenge</h2><ul class="cs-list"><li>Reporting stitched together from ERP, WMS exports, carrier CSVs and Excel.</li><li>Carrier invoices matched by hand every month.</li><li>OTIF and inventory logic changed from month to month.</li></ul></div>
-    <div class="card"><h2 class="cs-h2">Impact</h2><ul class="cs-list"><li>Operations act on OTIF in the same week.</li><li>One definition of inventory and OTIF across sites.</li></ul><p class="cs-meta">Typical timeline: 12 weeks · 2-person team</p></div>
+    <div class="card"><h2 class="cs-h2">Impact</h2><ul class="cs-list"><li>Goal: operations act on OTIF in the same week.</li><li>Goal: one definition of inventory and OTIF across sites.</li></ul><p class="cs-meta">Typical timeline: 12 weeks · with your team</p></div>
   </div>
   <div class="wrap">
-    <div class="card cs-sol"><h2 class="cs-h2">Solution</h2><ul class="cs-sollist"><li><strong>Jedox</strong><span>Logistics input form: cost rows, inventory by warehouse and OTIF against budget.</span></li><li><strong>Snowflake</strong><span>Stock movements, receipts and carrier invoices in one model.</span></li><li><strong>Power BI</strong><span>Freight cost by type, OTIF gauge, inventory by warehouse and cost matrix.</span></li><li><strong>Qlik Sense</strong><span>KPIs, filter panes, freight combo chart and cost pivot table.</span></li><li><strong>Excel VBA</strong><span>Normalises carrier invoice files that still arrive as Excel.</span></li></ul></div>
+    <div class="card cs-sol"><h2 class="cs-h2">Solution</h2><ul class="cs-sollist"><li><strong>Jedox</strong><span>Logistics input form: cost rows, inventory by warehouse and OTIF against budget.</span></li><li><strong>Snowflake</strong><span>Stock movements, receipts and carrier invoices in one model.</span></li><li><strong>Power BI</strong><span>Freight cost by type, OTIF gauge, inventory by warehouse and cost matrix.</span></li><li><strong>Qlik Sense</strong><span>KPIs, filter panes, freight combo chart and cost pivot table.</span></li><li><strong>Excel VBA</strong><span>Normalizes carrier invoice files that still arrive as Excel.</span></li></ul></div>
   </div>
 </section>
 <section class="section alt" aria-labelledby="shots-h">
@@ -62,6 +63,7 @@
     <p class="note cs-note">Mockups with fictional data.</p>
     <div class="cs-shots"><figure class="cs-shot"><a href="../../img/case-studies/logistics-explorer.webp"><img src="../../img/case-studies/logistics-explorer.webp" width="1280" height="720" loading="lazy" alt="Windows File Explorer mockup showing a Monthly_Logistics_Reporting folder with twelve month subfolders and thirteen Excel workbooks for one month. Fictional data."></a><figcaption>Starting point: the monthly folder of Excel workbooks <span class="cs-fict">fictional data</span></figcaption></figure><figure class="cs-shot"><a href="../../img/case-studies/logistics-jedox.webp"><img src="../../img/case-studies/logistics-jedox.webp" width="1280" height="720" loading="lazy" alt="Jedox Web planning input report mockup with filter selectors in the header and an input grid. Fictional data."></a><figcaption>Jedox input form in user mode <span class="cs-fict">fictional data</span></figcaption></figure><figure class="cs-shot"><a href="../../img/case-studies/logistics-powerbi.webp"><img src="../../img/case-studies/logistics-powerbi.webp" width="1280" height="720" loading="lazy" alt="Power BI report mockup with slicers, KPI cards, charts and a matrix. Fictional data."></a><figcaption>Power BI report <span class="cs-fict">fictional data</span></figcaption></figure><figure class="cs-shot"><a href="../../img/case-studies/logistics-qlik.webp"><img src="../../img/case-studies/logistics-qlik.webp" width="1280" height="720" loading="lazy" alt="Qlik Sense sheet mockup with selections, KPIs, charts and a table. Fictional data."></a><figcaption>Qlik Sense sheet <span class="cs-fict">fictional data</span></figcaption></figure></div>
     <nav class="cs-pn" aria-label="Case studies"><a href="../closing/" rel="prev">← Month-end close</a><a href="../">All case studies</a><a href="../service/" rel="next">Service planning →</a></nav>
+    <p class="cs-cta cs-book"><a class="cs-btn" href="../../#book">Book a call</a></p>
   </div>
 </section>
 </main>
