@@ -7,7 +7,7 @@
 <title>Plan Build Automate – Finance data consulting</title>
 <meta name="description" content="Freelance help for FP&amp;A and controlling teams: planning models, finance data and reporting that work together.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="styles.css?v=20261101">
+<link rel="stylesheet" href="styles.css?v=20261101b">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -22,6 +22,7 @@
         <li><a href="#examples">Example engagements</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="#book">Book a call</a></li>
       </ul>
     </nav>
   </div>
@@ -34,6 +35,7 @@
         <li><a href="#examples">Example engagements</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
+        <li><a href="#book">Book a call</a></li>
   </ul>
 </nav>
 <main id="main">
@@ -190,6 +192,23 @@
     <p>Contact details coming soon.</p>
   </div>
 </section>
+
+<section id="book" class="section book">
+  <div class="wrap">
+    <p class="eyebrow">Next step</p>
+    <h2>Book a call</h2>
+    <p class="book-lead">Pick a time that suits you; you'll get a confirmation email and calendar invite.</p>
+    <div id="cal-inline" class="cal-embed" aria-label="Booking calendar"></div>
+    <p class="book-fallback"><a class="btn-book" href="https://cal.com/plan-build-automate/intro-call" target="_blank" rel="noopener">Open the booking page</a></p>
+  </div>
+</section>
+<!-- Cal.com inline embed (official snippet) -->
+<script type="text/javascript">
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+  Cal("init", "intro-call", {origin:"https://app.cal.com"});
+  Cal.ns["intro-call"]("inline", {elementOrSelector:"#cal-inline", calLink:"plan-build-automate/intro-call", config:{layout:"month_view", theme:"dark"}});
+  Cal.ns["intro-call"]("ui", {theme:"dark", cssVarsPerTheme:{dark:{"cal-brand":"#19b8a6"}}, hideEventTypeDetails:false, layout:"month_view"});
+</script>
 </main>
 <footer class="site-footer">
   <div class="wrap footer-inner">
@@ -205,6 +224,7 @@
         <li><a href="#examples">Example engagements</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="#book">Book a call</a></li>
       </ul>
     </nav>
   </div>
