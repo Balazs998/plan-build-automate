@@ -135,3 +135,16 @@ h3{margin:.2rem 0 .5rem;font-size:1.125rem;font-weight:600;line-height:1.3}
 @media (max-width:1060px){.cs-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:860px){.cs-grid,.cs-shots{grid-template-columns:1fr}}
 @media (max-width:600px){.cs-cards{grid-template-columns:1fr}.cs-kpis{gap:.4rem}.cs-kpi{padding:.5rem}.cs-kunit{font-size:.75rem}.cs-kname{font-size:.85rem}.cs-sollist li{grid-template-columns:1fr;gap:.15rem}}
+
+/* How I work */
+.hw-h{margin:2rem 0 1rem}
+.steps-strip{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;counter-reset:none}
+.steps-strip li{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--teal2);border-radius:12px;padding:1.1rem 1.2rem}
+.step-n{display:inline-flex;align-items:center;justify-content:center;width:2rem;height:2rem;border-radius:50%;background:var(--teal);color:#04131c;font-weight:700}
+.steps-strip h4{margin:.6rem 0 .3rem;font-size:1.1rem}
+.steps-strip p{margin:0;color:var(--muted)}
+.hw-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:1.5rem;align-items:start;margin-top:2rem}
+.hw-grid > .checks{margin:0}
+.get-box h3{margin-top:0}.get-box .checks{margin-top:.5rem}
+@media (max-width:860px){.steps-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.hw-grid{grid-template-columns:1fr}}
+@media (max-width:480px){.steps-strip{grid-template-columns:1fr}}
